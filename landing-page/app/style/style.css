@@ -1,0 +1,11 @@
+.main {
+  height: 450px;
+}
+
+.center {
+  height: 300px;
+}
+
+.main .first > .button a:hover {
+  background-color: red;
+}

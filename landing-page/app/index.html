@@ -4,10 +4,153 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Landing page</title>
-    <link rel="stylesheet" href="/landing-page/app/style/bootstrap.min.css" />
-    <link rel="stylesheet" href="/landing-page/app/style/style.css" />
+    <link rel="stylesheet" href="./style/bootstrap.min.css" />
+    <link rel="stylesheet" href="./style/style.css" />
   </head>
   <body>
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+      <div class="container">
+        <a class="navbar-brand fs-5" href="#">Start bootstrap</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Service</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section class="main mb-5">
+      <div
+        class="first w-100 h-100 bg-dark d-flex flex-column justify-content-center align-items-center"
+      >
+        <div
+          class="word d-flex justify-content-center flex-column align-items-center text-white mb-3"
+        >
+          <h1 class="text-center fw-bolder fs-1">
+            Present your business in a<br />
+            whole new way
+          </h1>
+          <p class="text-center text-white-50 fw-lighter fs-5">
+            Quickly design and customize responsive mobile-first sites with<br />
+            Bootstrap, the worlds most popular front-end open source toolkit!
+          </p>
+        </div>
+        <div
+          class="button d-flex justify-content-center align-items-center flex-wrap gap-5 w-100"
+        >
+          <a
+            class="px-4 py-2 bg-primary rounded-3 text-white text-decoration-none fs-5"
+            href="#"
+            >Get Started</a
+          >
+          <a
+            class="px-4 py-2 bg-transparent rounded-3 text-white text-decoration-none border border-3 border-white fs-5 learn"
+            href="#"
+            >Learn More</a
+          >
+        </div>
+      </div>
+    </section>
+    <section
+      class="center my-5 border-bottom border-1 border-dark border-opacity-25"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="left">
+              <img
+                src="./img/portfolio/cake.png"
+                width="60px"
+                height="60px"
+                alt="img"
+                class="rounded-3 mb-2"
+              />
+              <h1 class="fs-3">Featured title</h1>
+              <p>
+                Paragraph of text beneath the heading to explain the heading.
+                We'll add onto it with another sentence and probably just keep
+                going until we run out of words.
+              </p>
+              <a class="icon-link text-decoration-none" href="#">
+                Call to action
+                <svg class="bi" aria-hidden="true">
+                  <use xlink:href="#arrow-right"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="center">
+              <img
+                src="./img/portfolio/cabin.png"
+                width="60px"
+                height="60px"
+                alt="img"
+                class="rounded-3 mb-2"
+              />
+              <h1 class="fs-3">Featured title</h1>
+              <p>
+                Paragraph of text beneath the heading to explain the heading.
+                We'll add onto it with another sentence and probably just keep
+                going until we run out of words.
+              </p>
+              <a class="icon-link text-decoration-none" href="#">
+                Call to action
+                <svg class="bi" aria-hidden="true">
+                  <use xlink:href="#arrow-right"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="end">
+              <img
+                src="./img/portfolio/circus.png"
+                width="60px"
+                height="60px"
+                alt="img"
+                class="rounded-3 mb-2"
+              />
+              <h1 class="fs-3">Featured title</h1>
+              <p>
+                Paragraph of text beneath the heading to explain the heading.
+                We'll add onto it with another sentence and probably just keep
+                going until we run out of words.
+              </p>
+              <a class="icon-link text-decoration-none" href="#">
+                Call to action
+                <svg class="bi" aria-hidden="true">
+                  <use xlink:href="#arrow-right"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <script src="./js/bootstrap.min.js"></script>
   </body>
 </html>
