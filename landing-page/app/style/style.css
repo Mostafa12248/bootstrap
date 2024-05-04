@@ -3,9 +3,13 @@
 }
 
 .center {
-  height: 300px;
+  min-height: 300px;
 }
 
 .main .first > .button a:hover {
   background-color: red;
 }
+
+/* .end .container .row .col {
+  max-width: 400px;
+} */
