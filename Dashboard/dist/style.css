@@ -1,0 +1,37 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  scroll-behavior: smooth;
+}
+
+nav .links div:hover {
+  transition: 0.3s;
+  background-color: rgba(255, 255, 255, 0.288);
+  border-radius: 10px;
+}
+nav .links .pages .dropdown-menu .dropdown:hover .dropdown-menu {
+  display: inline;
+}
+
+.one .two:hover {
+  background-color: rgba(128, 128, 128, 0.573);
+}
+.one button:hover {
+  opacity: 0.8;
+}
+
+.second .main-11 .row .colomn-1 .left-side .all {
+  height: 300px;
+}
+.second .main-11 .row .colomn-1 .left-side .all .li-2 {
+  height: 100px;
+}
+.second .main-11 .row .colomn-1 .left-side .all .li-1 {
+  height: 85px;
+}
+.second .main-11 .row .colomn-1 .left-side .all .li-0 {
+  height: 70px;
+}
+.second .main-11 .row .colomn-2 .right-side .par {
+  height: 338px;
+}/*# sourceMappingURL=style.css.map */

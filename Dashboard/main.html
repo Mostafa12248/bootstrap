@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./dist/bootstrap.min.css" />
+    <link rel="stylesheet" href="./dist/style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand fs-3 fw-bold" href="#">Mostafa Yahya</a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="collapse navbar-collapse justify-content-start gap-4 flex-row-reverse one"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <i class="fa-solid fa-user"></i>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end">
+                <li class="d-flex align-items-center">
+                  <i class="fa-solid fa-user ms-2"></i>
+                  <a class="dropdown-item two p-2" href="#">Login</a>
+                </li>
+
+                <li class="d-flex align-items-center">
+                  <i class="fa-solid fa-registered ms-2"></i>
+                  <a class="dropdown-item two p-2" href="#">Register</a>
+                </li>
+
+                <li class="d-flex align-items-center">
+                  <i class="fa-solid fa-gear ms-2"></i>
+                  <a class="dropdown-item two p-2" href="#">Setting</a>
+                </li>
+                <li class="d-flex align-items-center">
+                  <i class="fa-solid fa-chart-line ms-2"></i>
+                  <a class="dropdown-item two p-2" href="#">Activity Log</a>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li class="d-flex align-items-center">
+                  <i
+                    class="fa-solid fa-right-from-bracket ms-2 text-danger"
+                  ></i>
+                  <a class="dropdown-item two p-2" href="#">Logout</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control rounded-end-0"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button
+              class="btn text-white bg-primary rounded-start-0"
+              type="submit"
+              title="button"
+            >
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </form>
+          <div
+            class="links collapse navbar-collapse justify-content-center align-items-center gap-5 w-75"
+            id="navbarSupportedContent"
+          >
+            <div class="p-2">
+              <a class="text-decoration-none fs-5 text-white" href="#"
+                >Dashboard</a
+              >
+            </div>
+
+            <div class="dropdown layout p-2">
+              <a
+                class="dropdown-toggle text-decoration-none fs-5 text-white"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Layout
+              </a>
+
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item fs-5 mb-3" href="#"
+                    >Static Navigation</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item fs-5" href="#">Light SideNav</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="dropdown p-2 pages">
+              <a
+                class="dropdown-toggle text-decoration-none fs-5 text-white"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                pages
+              </a>
+
+              <ul class="dropdown-menu">
+                <li>
+                  <div class="dropdown">
+                    <a
+                      class="dropdown-toggle ps-3 text-decoration-none text-black fs-5 pe-3"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Error
+                    </a>
+
+                    <ul class="dropdown-menu dropdown-menu-end">
+                      <li>
+                        <a class="dropdown-item fs-5" href="#"> 401page</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item fs-5" href="#">404 page</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item fs-5" href="#">500 page</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="p-2">
+              <a class="text-decoration-none fs-5 text-white" href="#"
+                >Charset</a
+              >
+            </div>
+            <div class="p-2">
+              <a class="text-decoration-none fs-5 text-white" href="">Table</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section class="first">
+      <div class="container-fluid pt-3 px-4">
+        <div class="title">
+          <h1>Dashboard</h1>
+          <p>Dashboard</p>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 col-xl-4 col-xxl-3">
+            <div class="card border-success mb-3 bg-primary">
+              <div class="card-body">
+                <h5 class="card-title text-white">primary Card</h5>
+              </div>
+
+              <div
+                class="card-footer bg-transparent d-flex justify-content-between align-items-center"
+              >
+                <a class="text-white" href="#"> view detals </a>
+                <i class="fa-solid fa-arrow-right text-white"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-xl-4 col-xxl-3">
+            <div class="card border-success mb-3 bg-warning">
+              <div class="card-body">
+                <h5 class="card-title text-white">warning Card</h5>
+              </div>
+
+              <div
+                class="card-footer bg-transparent d-flex justify-content-between align-items-center"
+              >
+                <a class="text-white" href="#"> view detals </a>
+                <i class="fa-solid fa-arrow-right text-white"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-xl-4 col-xxl-3">
+            <div class="card border-success mb-3 bg-success">
+              <div class="card-body">
+                <h5 class="card-title text-white">success Card</h5>
+              </div>
+
+              <div
+                class="card-footer bg-transparent d-flex justify-content-between align-items-center"
+              >
+                <a class="text-white" href="#"> view detals </a>
+                <i class="fa-solid fa-arrow-right text-white"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-xl-4 col-xxl-3">
+            <div class="card border-success mb-3 bg-danger">
+              <div class="card-body">
+                <h5 class="card-title text-white">danger Card</h5>
+              </div>
+
+              <div
+                class="card-footer bg-transparent d-flex justify-content-between align-items-center"
+              >
+                <a class="text-white" href="#"> view detals </a>
+                <i class="fa-solid fa-arrow-right text-white"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="second">
+      <div class="container-fluid pt-3 px-4 main-11">
+        <div class="row g-4">
+          <div class="col-md-6 colomn-1">
+            <div
+              class="left-side d-flex flex-column border border-2 border-secondary rounded-1"
+            >
+              <div
+                class="header d-flex gap-2 border-1 border-bottom align-items-center py-2 bg-body-secondary rounded-1"
+              >
+                <i class="fa-solid fa-chart-bar fs-5 ms-3"></i>
+                <p class="fs-5 m-0">Bar Chart Example</p>
+              </div>
+
+              <div class="all d-flex gap-3 p-2 px-3">
+                <div class="ratio ratio-21x9 mt-auto bg-primary li-0">
+                  <p class="text-center text-white fw-bold fs-4">20%</p>
+                </div>
+                <div class="ratio ratio-16x9 mt-auto bg-primary li-1">
+                  <p class="text-center text-white fw-bold fs-4">30%</p>
+                </div>
+                <div class="ratio ratio-16x9 mt-auto bg-primary li-2">
+                  <p class="text-center text-white fw-bold fs-4">35%</p>
+                </div>
+                <div class="ratio ratio-16x9 h-50 mt-auto bg-primary">
+                  <p class="text-center text-white fw-bold fs-4">50%</p>
+                </div>
+                <div class="ratio ratio-4x3 h-75 mt-auto bg-primary">
+                  <p class="text-center text-white fw-bold fs-4">75%</p>
+                </div>
+                <div class="ratio ratio-1x1 bg-primary">
+                  <p class="text-center text-white fw-bold fs-4">100%</p>
+                </div>
+              </div>
+              <div class="d-flex justify-content-center">
+                <p class="w-100 text-center fw-lighter">January</p>
+                <p class="w-100 text-center fw-lighter">February</p>
+                <p class="w-100 text-center fw-lighter">Mars</p>
+                <p class="w-100 text-center fw-lighter">April</p>
+                <p class="w-100 text-center fw-lighter">May</p>
+                <p class="w-100 text-center fw-lighter">June</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 colomn-2">
+            <div
+              class="right-side d-flex flex-column border border-2 border-secondary rounded-1"
+            >
+              <div
+                class="header d-flex gap-2 border-1 border-bottom align-items-center bg-body-secondary rounded-1 pt-2 pb-2"
+              >
+                <i class="fa-solid fa-chart-area ms-3 fs-5"></i>
+                <p class="fs-5 m-0">Area Chart Example</p>
+              </div>
+
+              <div
+                class="par d-flex flex-column justify-content-center px-2 gap-2 py-3"
+              >
+                <div
+                  class="progress h-25"
+                  role="progressbar"
+                  aria-label="Success example"
+                  aria-valuenow="25"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                >
+                  <div class="progress-bar bg-primary" style="width: 20%">
+                    20%
+                  </div>
+                </div>
+
+                <div
+                  class="progress h-25"
+                  role="progressbar"
+                  aria-label="Success example"
+                  aria-valuenow="25"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                >
+                  <div class="progress-bar bg-primary" style="width: 30%">
+                    30%
+                  </div>
+                </div>
+
+                <div
+                  class="progress h-25"
+                  role="progressbar"
+                  aria-label="Danger example"
+                  aria-valuenow="100"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                >
+                  <div class="progress-bar bg-primary" style="width: 35%">
+                    35%
+                  </div>
+                </div>
+
+                <div
+                  class="progress h-25"
+                  role="progressbar"
+                  aria-label="Info example"
+                  aria-valuenow="50"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                >
+                  <div
+                    class="progress-bar bg-primary text-white"
+                    style="width: 50%"
+                  >
+                    50%
+                  </div>
+                </div>
+
+                <div
+                  class="progress h-25"
+                  role="progressbar"
+                  aria-label="Warning example"
+                  aria-valuenow="75"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                >
+                  <div
+                    class="progress-bar bg-primary text-white"
+                    style="width: 75%"
+                  >
+                    75%
+                  </div>
+                </div>
+
+                <div
+                  class="progress h-25"
+                  role="progressbar"
+                  aria-label="Danger example"
+                  aria-valuenow="100"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                >
+                  <div class="progress-bar bg-primary" style="width: 100%">
+                    100%
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="/app/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
