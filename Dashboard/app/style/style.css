@@ -41,7 +41,7 @@ nav .links .pages .dropdown-menu .dropdown:hover .dropdown-menu {
 /* scrollbar color */
 
 ::-webkit-scrollbar {
-  width: 15px;
+  width: 16px;
 }
 
 ::-webkit-scrollbar-thumb {
