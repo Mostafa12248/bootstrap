@@ -2,8 +2,10 @@
   margin: 0px;
   padding: 0px;
   scroll-behavior: smooth;
+  li {
+    list-style: none;
+  }
 }
-
 nav .links div:hover {
   transition: 0.3s;
   background-color: rgba(255, 255, 255, 0.288);
@@ -34,4 +36,14 @@ nav .links .pages .dropdown-menu .dropdown:hover .dropdown-menu {
 }
 .second .main-11 .row .colomn-2 .right-side .par {
   height: 338px;
+}
+
+/* scrollbar color */
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #0d6efd;
 }
