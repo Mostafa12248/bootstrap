@@ -38,6 +38,14 @@ nav .links .pages .dropdown-menu .dropdown:hover .dropdown-menu {
   height: 338px;
 }
 
+/* error 401 */
+
+.main .row-88 .column-1 .error .word {
+  h1 {
+    font-size: 80px;
+  }
+}
+
 /* scrollbar color */
 
 ::-webkit-scrollbar {
