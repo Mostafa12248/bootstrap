@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style/bootstrap.min.css" />
+    <link rel="stylesheet" href="./style/style.css" />
+  </head>
+  <body>
+    <main class="parent position-relative vh-100">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand fs-3 fw-bold" href="#">Mostafa Yahya</a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div
+            class="collapse navbar-collapse justify-content-start gap-4 flex-row-reverse one"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <i class="fa-solid fa-user"></i>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li class="d-flex align-items-center">
+                    <i class="fa-solid fa-user ms-2"></i>
+                    <a class="dropdown-item two p-2" href="./login.html"
+                      >Login</a
+                    >
+                  </li>
+
+                  <li class="d-flex align-items-center">
+                    <i class="fa-solid fa-registered ms-2"></i>
+                    <a class="dropdown-item two p-2" href="./sign_up.html"
+                      >Register</a
+                    >
+                  </li>
+
+                  <li class="d-flex align-items-center">
+                    <i class="fa-solid fa-gear ms-2"></i>
+                    <a class="dropdown-item two p-2" href="#">Setting</a>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <i class="fa-solid fa-chart-line ms-2"></i>
+                    <a class="dropdown-item two p-2" href="#">Activity Log</a>
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li class="d-flex align-items-center">
+                    <i
+                      class="fa-solid fa-right-from-bracket ms-2 text-danger"
+                    ></i>
+                    <a class="dropdown-item two p-2" href="./login.html"
+                      >Logout</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control rounded-end-0"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button
+                class="btn text-white bg-primary rounded-start-0"
+                type="submit"
+                title="button"
+              >
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </form>
+            <div
+              class="links collapse navbar-collapse justify-content-center align-items-center gap-5 w-75"
+              id="navbarSupportedContent"
+            >
+              <div class="p-2">
+                <a
+                  class="text-decoration-none fs-5 text-white"
+                  href="./main.html"
+                  >Dashboard</a
+                >
+              </div>
+
+              <div class="dropdown layout p-2">
+                <a
+                  class="dropdown-toggle text-decoration-none fs-5 text-white"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Layout
+                </a>
+
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item fs-5 mb-3" href="#"
+                      >Static Navigation</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item fs-5" href="#">Light SideNav</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="dropdown p-2 pages">
+                <a
+                  class="dropdown-toggle text-decoration-none fs-5 text-white"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  pages
+                </a>
+
+                <ul class="dropdown-menu">
+                  <li>
+                    <div class="dropdown">
+                      <a
+                        class="dropdown-toggle ps-3 text-decoration-none text-black fs-5 pe-3"
+                        href="#"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        Error
+                      </a>
+
+                      <ul class="dropdown-menu dropdown-menu-end">
+                        <li>
+                          <a class="dropdown-item fs-5" href="./error401.html">
+                            401page</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item fs-5" href="./error404.html"
+                            >404 page</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item fs-5" href="./error500.html"
+                            >500 page</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="p-2">
+                <a class="text-decoration-none fs-5 text-white" href="#"
+                  >Charset</a
+                >
+              </div>
+              <div class="p-2">
+                <a class="text-decoration-none fs-5 text-white" href=""
+                  >Table</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <section class="first-1">
+        <div class="container-fluid pt-3 px-4">
+          <div class="title">
+            <h1>Charts</h1>
+          </div>
+
+          <div class="breadcrumb-div">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                  <a href="./main.html">Dashboard</a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">
+                  charset
+                </li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+      </section>
+
+      <section class="second-2">
+        <div class="container-fluid px-4">
+          <div class="col-md-12 colomn-2">
+            <div
+              class="right-side d-flex flex-column border border-2 border-secondary rounded-1"
+            >
+              <div
+                class="header d-flex gap-2 border-1 border-bottom align-items-center bg-body-secondary border-dark-subtle rounded-1 pt-2 pb-2"
+              >
+                <i class="fa-solid fa-chart-area ms-3 fs-5"></i>
+                <p class="fs-5 m-0">Area Chart Example</p>
+              </div>
+
+              <div
+                class="par d-flex flex-column justify-content-center px-2 gap-2 py-3"
+              >
+                <div
+                  class="progress h-25"
+                  role="progressbar"
+                  aria-label="Success example"
+                  aria-valuenow="25"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                >
+                  <div
+                    class="progress-bar bg-primary"
+                    style="height: 40px; width: 20%"
+                  >
+                    20%
+                  </div>
+                </div>
+
+                <div
+                  class="progress h-25"
+                  role="progressbar"
+                  aria-label="Success example"
+                  aria-valuenow="25"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                >
+                  <div
+                    class="progress-bar bg-primary"
+                    style="height: 40px; width: 30%"
+                  >
+                    30%
+                  </div>
+                </div>
+
+                <div
+                  class="progress h-25"
+                  role="progressbar"
+                  aria-label="Danger example"
+                  aria-valuenow="100"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                >
+                  <div
+                    class="progress-bar bg-primary"
+                    style="height: 40px; width: 35%"
+                  >
+                    35%
+                  </div>
+                </div>
+
+                <div
+                  class="progress h-25"
+                  role="progressbar"
+                  aria-label="Info example"
+                  aria-valuenow="50"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                >
+                  <div
+                    class="progress-bar bg-primary text-white"
+                    style="height: 40px; width: 50%"
+                  >
+                    50%
+                  </div>
+                </div>
+
+                <div
+                  class="progress h-25"
+                  role="progressbar"
+                  aria-label="Warning example"
+                  aria-valuenow="75"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                >
+                  <div
+                    class="progress-bar bg-primary text-white"
+                    style="height: 40px; width: 75%"
+                  >
+                    75%
+                  </div>
+                </div>
+
+                <div
+                  class="progress h-25"
+                  role="progressbar"
+                  aria-label="Danger example"
+                  aria-valuenow="100"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                >
+                  <div
+                    class="progress-bar bg-primary"
+                    style="height: 40px; width: 100%"
+                  >
+                    100%
+                  </div>
+                </div>
+              </div>
+              <div
+                class="footerr bg-body-secondary px-3 border-dark-subtle border-top border-1"
+              >
+                <p class="mt-3">Updated yesterday at 11:59 PM</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="second">
+        <div class="container-fluid pt-3 px-4 main-11">
+          <div class="row g-4">
+            <div class="col-md-6 colomn-1">
+              <div
+                class="left-side d-flex flex-column border border-2 border-secondary rounded-1"
+              >
+                <div
+                  class="header d-flex gap-2 border-1 border-bottom align-items-center py-2 bg-body-secondary border-dark-subtle rounded-1"
+                >
+                  <i class="fa-solid fa-chart-bar fs-5 ms-3"></i>
+                  <p class="fs-5 m-0">Bar Chart Example</p>
+                </div>
+
+                <div class="all d-flex gap-3 p-2 px-3">
+                  <div class="ratio ratio-21x9 mt-auto bg-primary li-0">
+                    <p class="text-center text-white fw-bold fs-4">20%</p>
+                  </div>
+                  <div class="ratio ratio-16x9 mt-auto bg-primary li-1">
+                    <p class="text-center text-white fw-bold fs-4">30%</p>
+                  </div>
+                  <div class="ratio ratio-16x9 mt-auto bg-primary li-2">
+                    <p class="text-center text-white fw-bold fs-4">35%</p>
+                  </div>
+                  <div class="ratio ratio-16x9 h-50 mt-auto bg-primary">
+                    <p class="text-center text-white fw-bold fs-4">50%</p>
+                  </div>
+                  <div class="ratio ratio-4x3 h-75 mt-auto bg-primary">
+                    <p class="text-center text-white fw-bold fs-4">75%</p>
+                  </div>
+                  <div class="ratio ratio-1x1 bg-primary">
+                    <p class="text-center text-white fw-bold fs-4">100%</p>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-center mb-2">
+                  <p class="w-100 text-center fw-lighter">January</p>
+                  <p class="w-100 text-center fw-lighter">February</p>
+                  <p class="w-100 text-center fw-lighter">Mars</p>
+                  <p class="w-100 text-center fw-lighter">April</p>
+                  <p class="w-100 text-center fw-lighter">May</p>
+                  <p class="w-100 text-center fw-lighter">June</p>
+                </div>
+                <div
+                  class="footerr bg-body-secondary px-3 border-1 border-top border-dark-subtle"
+                >
+                  <p class="mt-3">Updated yesterday at 11:59 PM</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 colomn-2">
+              <div
+                class="right-side d-flex flex-column border border-2 border-secondary rounded-1"
+              >
+                <div
+                  class="header d-flex gap-2 border-1 border-bottom align-items-center bg-body-secondary rounded-1 pt-2 pb-2 border-dark-subtle"
+                >
+                  <i class="fa-solid fa-chart-pie ms-3 fs-5"></i>
+                  <p class="fs-5 m-0">Pie Chart Example</p>
+                </div>
+
+                <div
+                  class="colors d-flex justify-content-center align-items-center gap-2 py-3 px-5"
+                >
+                  <div class="mark-1 d-flex gap-2 align-items-center">
+                    <div class="blue bg-primary"></div>
+                    <p class="d-block m-0 p-0">Blue</p>
+                  </div>
+
+                  <div class="mark-1 d-flex gap-2 align-items-center">
+                    <div class="red bg-danger"></div>
+                    <p class="d-block m-0 p-0">red</p>
+                  </div>
+
+                  <div class="mark-1 d-flex gap-2 align-items-center">
+                    <div class="yellow bg-warning"></div>
+                    <p class="d-block m-0 p-0">Yellow</p>
+                  </div>
+
+                  <div class="mark-1 d-flex gap-2 align-items-center">
+                    <div class="green bg-success"></div>
+                    <p class="d-block m-0 p-0">Green</p>
+                  </div>
+                </div>
+
+                <div
+                  class="circle d-flex justify-content-center align-items-center mb-2"
+                >
+                  <div
+                    class="circle-color bg-body-secondary d-flex flex-wrap position-relative overflow-hidden"
+                  >
+                    <div
+                      class="green bg-success position-absolute start-0"
+                    ></div>
+                    <div class="blue bg-primary position-absolute end-0"></div>
+                    <div
+                      class="yellow bg-warning position-absolute bottom-0"
+                    ></div>
+                    <div
+                      class="red bg-danger position-absolute end-0 bottom-0"
+                    ></div>
+                  </div>
+                </div>
+                <div
+                  class="footerr bg-body-secondary px-3 border-1 border-top border-dark-subtle"
+                >
+                  <p class="mt-3">Updated yesterday at 11:59 PM</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="footer position-absolute w-100 bottom-1 p-4 d-flex justify-content-between align-items-center gap-5 mt-3"
+      >
+        <div class="copyright text-secondary">
+          Copyright © Mostafa Website 2024
+        </div>
+        <div class="privacy d-flex gap-3">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms & Conditions</a>
+        </div>
+      </section>
+    </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
