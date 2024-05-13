@@ -4,9 +4,17 @@
       h1 {
         font-size: 40px;
       }
+      p {
+        font-family: "Josefin Slab", serif;
+      }
     }
     .row {
       .column_100 {
+        .card-body {
+          p {
+            font-family: "Josefin Slab", serif;
+          }
+        }
         .card {
           .images {
             &:hover {

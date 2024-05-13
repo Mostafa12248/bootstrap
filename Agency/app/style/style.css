@@ -10,12 +10,15 @@ nav .container .links-1 ul > li a:hover {
 
 .first {
   height: 100vh;
-  background-image: url(../../app/img/header-bg.jpg);
+  background-image: url(../..//app/img/header-bg.jpg);
   background-position: center center;
   background-size: cover;
 }
 .first .first-con .word h1 {
   font-size: 80px;
+}
+.first .first-con .word h3 {
+  font-family: "Josefin Slab", serif;
 }
 .first .first-con .word a:hover {
   opacity: 0.9;
@@ -23,6 +26,9 @@ nav .container .links-1 ul > li a:hover {
 
 .services .container > .header h1 {
   font-size: 40px;
+}
+.services .container > .header p {
+  font-family: "Josefin Slab", serif;
 }
 .services .container .row .column-55 .card .icon {
   width: 120px;
@@ -36,6 +42,12 @@ nav .container .links-1 ul > li a:hover {
 
 .portfolio .container .header h1 {
   font-size: 40px;
+}
+.portfolio .container .header p {
+  font-family: "Josefin Slab", serif;
+}
+.portfolio .container .row .column_100 .card-body p {
+  font-family: "Josefin Slab", serif;
 }
 .portfolio .container .row .column_100 .card .images:hover::before {
   cursor: pointer;
