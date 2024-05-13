@@ -1,0 +1,23 @@
+.services {
+  .container {
+    > .header {
+      h1 {
+        font-size: 40px;
+      }
+    }
+
+    .row {
+      .column-55 .card {
+        .icon {
+          width: 120px;
+          height: 120px;
+          border-radius: 50%;
+          background-color: gold;
+          i {
+            font-size: 70px;
+          }
+        }
+      }
+    }
+  }
+}

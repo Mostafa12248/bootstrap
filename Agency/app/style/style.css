@@ -1,0 +1,54 @@
+nav .container img {
+  width: 140px;
+}
+nav .container .links-1 ul > li a {
+  font-size: 16px;
+}
+nav .container .links-1 ul > li a:hover {
+  color: gold;
+}
+
+.first {
+  height: 100vh;
+  background-image: url(../../app/img/header-bg.jpg);
+  background-position: center center;
+  background-size: cover;
+}
+.first .first-con .word h1 {
+  font-size: 80px;
+}
+.first .first-con .word a:hover {
+  opacity: 0.9;
+}
+
+.services .container > .header h1 {
+  font-size: 40px;
+}
+.services .container .row .column-55 .card .icon {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: gold;
+}
+.services .container .row .column-55 .card .icon i {
+  font-size: 70px;
+}
+
+.portfolio .container .header h1 {
+  font-size: 40px;
+}
+.portfolio .container .row .column_100 .card .images:hover::before {
+  cursor: pointer;
+  content: " + ";
+  position: absolute;
+  z-index: 10;
+  background-color: gold;
+  width: 100%;
+  height: 75.3%;
+  opacity: 0.9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 120px;
+  color: white;
+}/*# sourceMappingURL=style.css.map */

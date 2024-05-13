@@ -4,11 +4,277 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Agency</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./style/bootstrap.min.css" />
-    <link rel="stylesheet" href="./style/dist/style.css" />
+    <link rel="stylesheet" href="./style/style.css" />
   </head>
   <body>
-    <h1>Hello</h1>
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
+      <div class="container">
+        <img src="./img/navbar-logo.svg" alt="icon" />
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse links-1"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link active px-3"
+                aria-current="page"
+                href="#services"
+                >SERVICES</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active px-3"
+                aria-current="page"
+                href="#portfolio"
+                >PORTFOLIO</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active px-3" aria-current="page" href="#"
+                >ABOUT</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active px-3" aria-current="page" href="#"
+                >TEAM</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active px-3" aria-current="page" href="#"
+                >CONTACT</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section
+      class="first d-flex justify-content-center align-items-center mt-5"
+    >
+      <div class="container first-con">
+        <div
+          class="word d-flex justify-content-center align-items-center flex-column text-white gap-4"
+        >
+          <h3 class="fs-1 text-center">Welcome To Our Studio!</h3>
+          <h1>IT'S NICE TO MEET YOU</h1>
+          <a
+            class="py-4 px-5 bg-warning rounded-3 text-decoration-none text-white fw-bold fs-5"
+            href="#"
+            >TELL ME MORE</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <section class="services" id="services">
+      <div class="container mb-5 pb-5">
+        <div class="header d-flex align-items-center flex-column my-5 py-5">
+          <h1 class="fw-bolder">SERVICES</h1>
+          <p class="fs-4 text-body-tertiary">
+            Lorem ipsum dolor sit amet consectetur.
+          </p>
+        </div>
+        <div class="row g-5 mb-5">
+          <div class="col-md-4 column-55">
+            <div
+              class="card d-flex flex-column align-items-center gap-4 border-0"
+            >
+              <div
+                class="icon d-flex justify-content-center align-items-center"
+              >
+                <i class="fa-solid fa-cart-shopping text-white"></i>
+              </div>
+              <div
+                class="card-body d-flex flex-column align-items-center p-0 gap-3"
+              >
+                <h1 class="card-title fs-3 fw-bold">E-Commerce</h1>
+                <p class="card-text fs-5 text-body-tertiary text-center">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Minima maxime quam architecto quo inventore harum ex magni,
+                  dicta impedit.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 column-55">
+            <div
+              class="card d-flex flex-column align-items-center gap-4 border-0"
+            >
+              <div
+                class="icon d-flex justify-content-center align-items-center"
+              >
+                <i class="fa-solid fa-laptop text-white"></i>
+              </div>
+              <div
+                class="card-body d-flex flex-column align-items-center p-0 gap-3"
+              >
+                <h1 class="card-title fs-1 y text-center">Responsive Design</h1>
+                <p class="card-text fs-5 text-body-tertiary text-center">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Minima maxime quam architecto quo inventore harum ex magni,
+                  dicta impedit.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 column-55">
+            <div
+              class="card d-flex flex-column align-items-center gap-4 border-0"
+            >
+              <div
+                class="icon d-flex justify-content-center align-items-center"
+              >
+                <i class="fa-solid fa-cart-shopping text-white"></i>
+              </div>
+              <div
+                class="card-body d-flex flex-column align-items-center p-0 gap-3"
+              >
+                <h1 class="card-title fs-1">E-Commerce</h1>
+                <p class="card-text fs-5 text-body-tertiary text-center">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Minima maxime quam architecto quo inventore harum ex magni,
+                  dicta impedit.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="portfolio bg-body-tertiary" id="portfolio">
+      <div class="container mb-5 pb-5">
+        <div class="header d-flex align-items-center flex-column my-5 py-5">
+          <h1 class="fw-bolder mt-5">PORTFOLIO</h1>
+          <p class="fs-4 text-body-tertiary">
+            Lorem ipsum dolor sit amet consectetur.
+          </p>
+        </div>
+
+        <div class="row g-5">
+          <div class="col-md-4 column_100">
+            <div class="card w-100">
+              <div class="images">
+                <img
+                  src="./img/portfolio/1.jpg"
+                  class="card-img-top"
+                  alt="img"
+                />
+              </div>
+              <div class="card-body d-flex align-items-center flex-column">
+                <h1 class="fs-3">Threads</h1>
+                <p class="card-text">Illustration</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 column_100">
+            <div class="card w-100">
+              <div class="images">
+                <img
+                  src="./img/portfolio/2.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+              </div>
+              <div class="card-body d-flex align-items-center flex-column">
+                <h1 class="fs-3">Explore</h1>
+                <p class="card-text">Graphic Design</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 column_100">
+            <div class="card w-100">
+              <div class="images">
+                <img
+                  src="./img/portfolio/3.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+              </div>
+              <div class="card-body d-flex align-items-center flex-column">
+                <h1 class="fs-3">Finish</h1>
+                <p class="card-text">Identity</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 column_100">
+            <div class="card w-100">
+              <div class="images">
+                <img
+                  src="./img/portfolio/4.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+              </div>
+              <div class="card-body d-flex align-items-center flex-column">
+                <h1 class="fs-3">Lines</h1>
+                <p class="card-text">Branding</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 column_100">
+            <div class="card w-100">
+              <div class="images">
+                <img
+                  src="./img/portfolio/5.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+              </div>
+              <div class="card-body d-flex align-items-center flex-column">
+                <h1 class="fs-3">Southwest</h1>
+                <p class="card-text">Website Design</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 column_100">
+            <div class="card w-100">
+              <div class="images">
+                <img
+                  src="./img/portfolio/6.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+              </div>
+              <div class="card-body d-flex align-items-center flex-column">
+                <h1 class="fs-3">Window</h1>
+                <p class="card-text">Photography</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
       integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
