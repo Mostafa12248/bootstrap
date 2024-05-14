@@ -1,3 +1,7 @@
+* {
+  scroll-behavior: smooth;
+}
+
 nav .container img {
   width: 140px;
 }
@@ -63,4 +67,4 @@ nav .container .links-1 ul > li a:hover {
   align-items: center;
   font-size: 120px;
   color: white;
-}/*# sourceMappingURL=style.css.map */
+} /*# sourceMappingURL=style.css.map */
