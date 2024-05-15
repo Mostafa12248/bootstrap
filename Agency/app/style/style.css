@@ -66,8 +66,9 @@ nav .container .links-1 ul > li a:hover {
 }
 
 .about .container .header {
+  margin-bottom: 80px;
   display: grid;
-  grid-template-columns: 40% 20% 40%;
+  grid-template-columns: auto;
   grid-template-areas: "h1 h1 h1 " "p p p";
   gap: 0px 50px;
 }
@@ -80,6 +81,7 @@ nav .container .links-1 ul > li a:hover {
   grid-area: p;
 }
 .about .container .row {
+  margin: 0px auto;
   position: relative;
 }
 .about .container .row::before {
@@ -88,119 +90,101 @@ nav .container .links-1 ul > li a:hover {
   width: 1px;
   height: 85%;
   background-color: gray;
-  left: 54%;
+  left: 50%;
   z-index: -1;
   margin: 0px auto;
 }
-.about .container .row .elements-reverse {
+.about .container .row .column-one .elements {
+  display: flex;
   margin-bottom: 100px;
-  display: grid;
-  grid-template-columns: 40% 20% 40%;
-  grid-template-areas: "img-reverse  word-reverse";
   gap: 50px;
 }
-.about .container .row .elements-reverse .word-reverse {
+.about .container .row .column-one .elements .word {
   margin-top: 20px;
-  grid-area: word-reverse;
-  grid-column: 3/4;
 }
-.about .container .row .elements-reverse .img-reverse {
-  grid-area: img-reverse;
-  display: flex;
-  justify-content: center;
-  align-items: start;
-  grid-column: 2/3;
+.about .container .row .column-one .elements .word h3 {
+  text-align: end;
 }
-.about .container .row .elements-reverse .img-reverse img {
+.about .container .row .column-one .elements .word p {
+  text-align: end;
+}
+.about .container .row .column-one .elements .img {
+  margin-right: 550px;
+}
+.about .container .row .column-one .elements .img img {
   width: 170px;
   height: 170px;
 }
-.about .container .row .elements {
+.about .container .row .column-two .elements {
+  display: flex;
   margin-bottom: 100px;
-  display: grid;
-  grid-template-columns: 40% 20% 40%;
-  grid-template-areas: "word img";
   gap: 50px;
 }
-.about .container .row .elements .word {
+.about .container .row .column-two .elements .word {
   margin-top: 20px;
-  grid-area: word;
 }
-.about .container .row .elements .word h3 {
-  text-align: end;
+.about .container .row .column-two .elements .word h3 {
+  text-align: start;
 }
-.about .container .row .elements .word p {
-  text-align: end;
+.about .container .row .column-two .elements .word p {
+  text-align: start;
 }
-.about .container .row .elements .img {
-  grid-area: img;
-  display: flex;
-  justify-content: center;
-  align-items: start;
+.about .container .row .column-two .elements .img {
+  margin-left: 550px;
 }
-.about .container .row .elements .img img {
+.about .container .row .column-two .elements .img img {
   width: 170px;
   height: 170px;
 }
 
 @media (max-width: 768px) {
-  .about .container .row {
-    position: relative;
-  }
   .about .container .row::before {
     content: " ";
     position: absolute;
     width: 1px;
-    height: 100%;
+    height: 85%;
     background-color: gray;
-    left: 40px;
+    left: 11%;
     z-index: -1;
+    margin: 0px auto;
+    display: none;
   }
-  .about .container .row .elements {
-    display: grid;
-    grid-template-columns: 17% 83%;
-    grid-template-areas: "img word";
-    gap: 30px;
-  }
-  .about .container .row .elements .word {
-    padding-right: 30px;
-    grid-area: word;
-  }
-  .about .container .row .elements .word h3 {
-    text-align: start;
-  }
-  .about .container .row .elements .word p {
-    text-align: start;
-  }
-  .about .container .row .elements .img {
+  .about .container .row .column-one .elements {
     display: flex;
-    justify-content: center;
-    align-items: start;
-    grid-area: img;
+    flex-direction: row-reverse;
+    margin-bottom: 100px;
+    gap: 25px;
   }
-  .about .container .row .elements .img img {
+  .about .container .row .column-one .elements .word h3 {
+    text-align: start;
+  }
+  .about .container .row .column-one .elements .word p {
+    text-align: start;
+  }
+  .about .container .row .column-one .elements .img {
+    margin-top: 10px;
+    margin-right: 0px;
+  }
+  .about .container .row .column-one .elements .img img {
     width: 90px;
     height: 90px;
   }
-  .about .container .row .elements-reverse {
-    display: grid;
-    grid-template-columns: 17% 83%;
-    grid-template-areas: "img-reverse  word-reverse ";
-    gap: 30px;
-  }
-  .about .container .row .elements-reverse .word-reverse {
-    padding-right: 50px;
-    grid-area: word-reverse;
-    grid-column: 2/4;
-  }
-  .about .container .row .elements-reverse .img-reverse {
+  .about .container .row .column-two .elements {
     display: flex;
-    justify-content: center;
-    align-items: start;
-    grid-area: img-reverse;
-    grid-column: 1/2;
+    margin-bottom: 100px;
+    gap: 25px;
   }
-  .about .container .row .elements-reverse .img-reverse img {
+  .about .container .row .column-two .elements .word h3 {
+    text-align: start;
+  }
+  .about .container .row .column-two .elements .word p {
+    text-align: start;
+  }
+  .about .container .row .column-two .elements .img {
+    margin-top: 10px;
+    margin-left: 0px;
+  }
+  .about .container .row .column-two .elements .img img {
     width: 90px;
     height: 90px;
   }

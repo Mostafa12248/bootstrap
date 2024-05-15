@@ -1,13 +1,13 @@
-// loll{
-//     d-flex align-items-center flex-column my-5 py-5
-// fw-bolder mt-5
+// * {
+//   overflow-x: hidden;
 // }
 
 .about {
   .container {
     .header {
+      margin-bottom: 80px;
       display: grid;
-      grid-template-columns: 40% 20% 40%;
+      grid-template-columns: auto;
       grid-template-areas:
         "h1 h1 h1 "
         "p p p";
@@ -24,6 +24,7 @@
       }
     }
     .row {
+      margin: 0px auto;
       position: relative;
       &::before {
         content: " ";
@@ -31,61 +32,57 @@
         width: 1px;
         height: 85%;
         background-color: gray;
-        left: 54%;
+        left: 50%;
         z-index: -1;
         margin: 0px auto;
       }
-      .elements-reverse {
-        margin-bottom: 100px;
-        display: grid;
-        grid-template-columns: 40% 20% 40%;
-        grid-template-areas: "img-reverse  word-reverse";
-        gap: 50px;
-        .word-reverse {
-          margin-top: 20px;
-          grid-area: word-reverse;
-          grid-column: 3/4;
-        }
 
-        .img-reverse {
-          grid-area: img-reverse;
+      .column-one {
+        .elements {
           display: flex;
-          justify-content: center;
-          align-items: start;
-          grid-column: 2/3;
-          img {
-            width: 170px;
-            height: 170px;
+          margin-bottom: 100px;
+          gap: 50px;
+          .word {
+            margin-top: 20px;
+            h3 {
+              text-align: end;
+            }
+            p {
+              text-align: end;
+            }
+          }
+
+          .img {
+            margin-right: 550px;
+            img {
+              width: 170px;
+              height: 170px;
+            }
           }
         }
       }
 
-      .elements {
-        margin-bottom: 100px;
-        display: grid;
-        grid-template-columns: 40% 20% 40%;
-        grid-template-areas: "word img";
-        gap: 50px;
-        .word {
-          margin-top: 20px;
-
-          grid-area: word;
-          h3 {
-            text-align: end;
-          }
-          p {
-            text-align: end;
-          }
-        }
-
-        .img {
-          grid-area: img;
+      .column-two {
+        .elements {
           display: flex;
-          justify-content: center;
-          align-items: start;
-          img {
-            width: 170px;
-            height: 170px;
+          margin-bottom: 100px;
+          gap: 50px;
+          .word {
+            margin-top: 20px;
+            h3 {
+              text-align: start;
+            }
+            p {
+              text-align: start;
+            }
+          }
+
+          .img {
+            margin-left: 550px;
+            img {
+              width: 170px;
+              height: 170px;
+            }
           }
         }
       }
@@ -97,68 +94,64 @@
   .about {
     .container {
       .row {
-        position: relative;
         &::before {
           content: " ";
           position: absolute;
           width: 1px;
-          height: 100%;
+          height: 85%;
           background-color: gray;
-          left: 40px;
+          left: 11%;
           z-index: -1;
-          //   margin: 0px auto;
+          margin: 0px auto;
+          display: none;
         }
-        .elements {
-          display: grid;
-          grid-template-columns: 17% 83%;
-          grid-template-areas: "img word";
-          gap: 30px;
-          .word {
-            padding-right: 30px;
-            grid-area: word;
-            h3 {
-              text-align: start;
-            }
-            p {
-              text-align: start;
-            }
-          }
-
-          .img {
+        .column-one {
+          .elements {
             display: flex;
-            justify-content: center;
-            align-items: start;
-            grid-area: img;
-            img {
-              width: 90px;
-              height: 90px;
+            flex-direction: row-reverse;
+            margin-bottom: 100px;
+            gap: 25px;
+            .word {
+              h3 {
+                text-align: start;
+              }
+              p {
+                text-align: start;
+              }
+            }
+
+            .img {
+              margin-top: 10px;
+              margin-right: 0px;
+              img {
+                width: 90px;
+                height: 90px;
+              }
             }
           }
         }
 
-        // reverce
-
-        .elements-reverse {
-          display: grid;
-          grid-template-columns: 17% 83%;
-
-          grid-template-areas: "img-reverse  word-reverse ";
-          gap: 30px;
-          .word-reverse {
-            padding-right: 50px;
-            grid-area: word-reverse;
-            grid-column: 2/4;
-          }
-
-          .img-reverse {
+        .column-two {
+          .elements {
             display: flex;
-            justify-content: center;
-            align-items: start;
-            grid-area: img-reverse;
-            grid-column: 1/2;
-            img {
-              width: 90px;
-              height: 90px;
+            margin-bottom: 100px;
+            gap: 25px;
+            .word {
+              h3 {
+                text-align: start;
+              }
+              p {
+                text-align: start;
+              }
+            }
+
+            .img {
+              margin-top: 10px;
+              margin-left: 0px;
+              img {
+                width: 90px;
+                height: 90px;
+              }
             }
           }
         }
@@ -166,15 +159,3 @@
     }
   }
 }
-
-//   .about {
-//     .container {
-//       .row {
-//         .elements {
-//           display: flex;
-//           flex-wrap: wrap;
-//         }
-//       }
-//     }
-//   }
-// }
