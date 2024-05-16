@@ -115,6 +115,24 @@ nav .container .links-1 ul > li a:hover {
   width: 170px;
   height: 170px;
 }
+.about .container .row .column-one-1 .elements {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.about .container .row .column-one-1 .elements .img {
+  width: 170px;
+  height: 170px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about .container .row .column-one-1 .elements .img p {
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
+}
 .about .container .row .column-two .elements {
   display: flex;
   margin-bottom: 100px;
@@ -169,6 +187,19 @@ nav .container .links-1 ul > li a:hover {
     width: 90px;
     height: 90px;
   }
+  .about .container .row .column-one-1 .elements {
+    display: flex;
+    justify-content: start;
+  }
+  .about .container .row .column-one-1 .elements .img {
+    width: 90px;
+    height: 90px;
+  }
+  .about .container .row .column-one-1 .elements .img p {
+    font-size: 14px;
+    font-weight: 500;
+    color: white;
+  }
   .about .container .row .column-two .elements {
     display: flex;
     margin-bottom: 100px;
@@ -188,4 +219,31 @@ nav .container .links-1 ul > li a:hover {
     width: 90px;
     height: 90px;
   }
+}
+.team .container .header h1 {
+  font-size: 50px;
+  font-weight: bold;
+}
+.team .container .header p {
+  font-weight: bold;
+  font-family: "Josefin Slab", serif;
+}
+.team .container .row .column-66 .info p {
+  font-family: "Josefin Slab", serif;
+  font-weight: bold;
+  font-size: 20px;
+}
+.team .container .row .column-66 .social .link {
+  width: 40px;
+  height: 40px;
+}
+.team .container .row .column-66 .social .link i {
+  margin-top: 11px;
+}
+.team .container .row .column-66 .social .link:hover {
+  cursor: pointer;
+  opacity: 0.9;
+}
+.team .footer p {
+  font-family: "Josefin Slab", serif;
 }/*# sourceMappingURL=style.css.map */
