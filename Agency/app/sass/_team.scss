@@ -1,0 +1,43 @@
+.team {
+  .container {
+    .header {
+      h1 {
+        font-size: 50px;
+        font-weight: bold;
+      }
+      p {
+        font-weight: bold;
+        font-family: "Josefin Slab", serif;
+      }
+    }
+    .row {
+      .column-66 {
+        .info {
+          p {
+            font-family: "Josefin Slab", serif;
+            font-weight: bold;
+            font-size: 20px;
+          }
+        }
+        .social {
+          .link {
+            i {
+              margin-top: 11px;
+            }
+            width: 40px;
+            height: 40px;
+            &:hover {
+              cursor: pointer;
+              opacity: 0.9;
+            }
+          }
+        }
+      }
+    }
+  }
+  .footer {
+    p {
+      font-family: "Josefin Slab", serif;
+    }
+  }
+}
