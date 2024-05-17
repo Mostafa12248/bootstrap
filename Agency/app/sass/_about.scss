@@ -22,16 +22,6 @@
     .row {
       margin: 0px auto;
       position: relative;
-      &::before {
-        content: " ";
-        position: absolute;
-        width: 1px;
-        height: 85%;
-        background-color: gray;
-        left: 50%;
-        z-index: -1;
-        margin: 0px auto;
-      }
 
       .column-one {
         .elements {
@@ -106,7 +96,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1400px) {
   .about {
     .container {
       .row {
